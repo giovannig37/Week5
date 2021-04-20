@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+    <title>Notes Menu</title>
+
+    <!-- css from CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="index.css">
+
+    <!-- javascript from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!-- images and icons from google-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <div class="section"></div>
+
+    <h1 class="white-text center-align"><b>A Menu For Taking Notes</b></h1>
+
+    <div class="section"></div>
+    <div class="section"></div>
+
+    <div class="center-align">
+        <div class="container white btn" style="height: 100%;">
+            <div class="row" style="margin-bottom: 0px;">
+                <form class="col s12">
+                    <div class="row" style="margin-bottom: 0px;">
+                        <div class="input-field col s10">
+                            <textarea name="new_note_textarea" id="new_note" type="text" class="materialize-textarea"></textarea>
+                            <label name="new_note_label" for="new_note">Enter New Note Here</label>
+                        </div>
+                        <div class="center-align col s2" style="margin-top: 20px;">
+                            <button class="btn waves-effect waves-light left-align red" type="button" name="add_new_note" onclick="addNewNote();">
+                                <b style="text-transform: none;">Add</b>
+                                <i class="material-icons right">send</i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="section"></div>
+    <div class="section"></div>
+
+    <div name="notes_list_div">
+        <!-- <div name="name_div" class="center-align row">
+            <div class="container white btn" style="height: 100%;">
+                <p name="name_text" class="left-align black-text col s11" style="text-transform: none; font-size: large;">
+                    text
+                </p>
+                <div class="col s1">
+                    <button class="btn-floating waves-effect waves-gray white" style="margin-top: 15px;" type="button" onclick="removeNote('name');">
+                        <i class="material-icons grey-text" style="font-size: 30px;">delete</i>
+                    </button>
+                </div>
+            </div>
+        </div> -->
+    </div>
+
+    <script src="index.js" async defer></script>
+</body>
+
+</html>
